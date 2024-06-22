@@ -1,0 +1,7 @@
+﻿-- Check for missing CustomerId
+EVALUATE
+FILTER(
+    'Total Orders',
+    NOT(CONTAINS('Customers', 'Customers'[CustomerId], 'Total Orders'[CustomerId]))
+)
+
